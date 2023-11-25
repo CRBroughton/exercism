@@ -11,8 +11,8 @@ defmodule Lasagna do
   @spec preparation_time_in_minutes(number()) :: number()
   def preparation_time_in_minutes(layers), do: layers * 2
 
-  @spec total_time_in_minutes(number(), number()) :: number()
   # Please define the 'total_time_in_minutes/2' function
+  @spec total_time_in_minutes(number(), number()) :: number()
   def total_time_in_minutes(layers, minutes), do: preparation_time_in_minutes(layers) + minutes
 
   @spec alarm() :: String.t()
