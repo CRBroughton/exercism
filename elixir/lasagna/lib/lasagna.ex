@@ -15,7 +15,7 @@ defmodule Lasagna do
   # Please define the 'total_time_in_minutes/2' function
   def total_time_in_minutes(layers, minutes), do: preparation_time_in_minutes(layers) + minutes
 
-  @spec alarm():: String.t()
+  @spec alarm() :: String.t()
   # Please define the 'alarm/0' function
   def alarm, do: "Ding!"
 end
