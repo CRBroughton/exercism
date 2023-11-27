@@ -8,11 +8,11 @@ defmodule LanguageList do
   end
 
   def remove(list) do
-    List.delete_at(list, 0)
+    tl(list)
   end
 
   def first(list) do
-    List.first(list)
+    hd(list)
   end
 
   def count(list) do
@@ -20,6 +20,6 @@ defmodule LanguageList do
   end
 
   def functional_list?(list) do
-    Enum.member?(list, "Elixir")
+    "Elixir" in list
   end
 end
