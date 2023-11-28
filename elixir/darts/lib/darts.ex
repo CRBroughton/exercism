@@ -11,7 +11,7 @@ defmodule Darts do
     cond do
       distance <= 1 -> 10
       distance <= 5 -> 5
-      distance <= 10 -> 10
+      distance <= 10 -> 1
       true -> 0
     end
   end
